@@ -36,6 +36,7 @@ cases_cyr_lat = {
     'объём': 'obyom',
     'выемка': 'vqyemka',
     'каньон': 'kanyon',
+    'гальюн': 'galyun',
 }
 
 

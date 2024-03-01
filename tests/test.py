@@ -35,6 +35,7 @@ cases_cyr_lat = {
     'жужжать': 'jujjath',
     'объём': 'obyom',
     'выемка': 'vqyemka',
+    'каньон': 'kanyon',
 }
 
 

@@ -11,6 +11,7 @@ def to_latin(string, locale=locale):
     trans = Transliterator.createFromRules("",
                                            "$wb = [^[:Letter:]] ;"
                                            # е
+                                           "$wb { е } $wb > e ;"
                                            "$wb { е > ye ;"
                                            "[ьъ] { е > ye ;"
                                            "е > e ;"

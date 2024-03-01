@@ -44,6 +44,11 @@ cases_cyr_lat = {
     'красивые': 'krasivqie',
     'коммерсантъ': 'kommersant',
     'мэи': 'mqhi',
+    'ЙЦУКЕНГШЩЗХЪ' : 'YCUKENGWWHZX',
+    'Ёж': 'Yoj',
+    'ЁЖ': 'YOJ',
+    'ФЫВАПРОЛД': 'FQIVAPROLD',
+    'ЯЧСМИТЬ': 'YACHSMITH',
 }
 
 

@@ -22,6 +22,9 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
 ]
 dynamic = ["version"]
+dependencies = [
+  "PyICU>=2.6",
+]
 
 [project.urls]
 "Homepage" = "https://github.com/ayum/ayum.translit"

@@ -1,18 +1,19 @@
-from icu import UnicodeString, Locale, Normalizer2, Transliterator
+from icu import UnicodeString, Normalizer2, Transliterator
 
-locale = Locale('ru_RU')
-
-
-def to_latin(string, locale=locale):
+def to_latin(string):
     ustring = UnicodeString(string)
     nfc = Normalizer2.getNFCInstance()
     ustring = nfc.normalize(ustring)
 
     trans = Transliterator.createFromRules("",
                                            "$wb = [^[:Letter:]] ;"
+                                           "$sp = [[:Zs:][:B:]] ;"
+                                           ";"
                                            # е
                                            "$wb { е } $wb > e ;"
+                                           "$wb { Е } $wb > E ;"
                                            "$wb { е > ye ;"
+                                           "$wb { Е > | Ye ;"
                                            "[ьъ] { е > ye ;"
                                            "е > e ;"
                                            # э

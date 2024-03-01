@@ -1,0 +1,39 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "translit-ru"
+authors = [
+  { name="~ayum" },
+]
+description = "Translit russian cyrillic and slugify phrases"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Topic :: Utilities",
+    "Topic :: Software Development :: Libraries",
+    "Environment :: Console",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
+dynamic = ["version"]
+
+[project.urls]
+"Homepage" = "https://github.com/ayum/ayum.translit"
+"Bug Tracker" = "https://github.com/ayum/ayum.translit/issues"
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.targets.wheel]
+packages = ["ayum"]
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests",
+]

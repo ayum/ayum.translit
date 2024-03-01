@@ -22,6 +22,7 @@
 - цирк - cirk,
 - жюри - jhuri,
 - парашют - parawut,
+- аллофон - alofon,
 - съезд - syezd,
 - метр - metr,
 - мэтр - mqetr,

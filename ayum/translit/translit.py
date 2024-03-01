@@ -72,7 +72,8 @@ def to_latin(string, locale=locale):
                                            "[nlmr] { ь } y[aueioq] > ;"
                                            "[цчшщжcwjh] { ь > ;"
                                            "ь > h ;"
-                                           "[nlmr] { ъ } y[aueioq] > y;"
+                                           "[nlmr] { ъ } y[aueioq] > q;"
+                                           "ъ } $wb > q;"
                                            "ъ > ;"
                                            # Проход с начала
                                            ":: Any-Null ;"

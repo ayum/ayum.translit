@@ -42,6 +42,7 @@ cases_cyr_lat = {
     'епархия': 'yeparxiya',
     'ералаш': 'yeralaw',
     'красивые': 'krasivqie',
+    'коммерсантъ': 'kommersantq',
 }
 
 

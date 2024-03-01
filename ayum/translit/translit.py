@@ -15,6 +15,7 @@ def to_latin(string, locale=locale):
                                            "[ьъ] { е > ye ;"
                                            "е > e ;"
                                            # э
+                                           "$wb { э } $wb > qe ;"
                                            "$wb { э > e ;"
                                            "[жшцйjwcy] { э > е ;"
                                            "э > qe ;"

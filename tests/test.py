@@ -18,7 +18,7 @@ cases_cyr_lat = {
     'мэтр': 'mqetr',
     'лук': 'luk',
     'люк': 'lhuk',
-    'клык': 'klqk',
+    'клык': 'klqik',
     'клик': 'klik',
     'клён': 'klhon',
     'клон': 'klon',
@@ -30,7 +30,7 @@ cases_cyr_lat = {
     'топь': 'toph',
     'йод': 'yod',
     'яд': 'yad',
-    'подыграть': 'podqgrath',
+    'подыграть': 'podqigrath',
     'вожжи': 'vojji',
     'жужжать': 'jujjath',
     'объём': 'obyom',
@@ -42,7 +42,7 @@ cases_cyr_lat = {
     'епархия': 'yeparxiya',
     'ералаш': 'yeralaw',
     'выем': 'vqyem',
-    'красивые': 'krasivqe',
+    'красивые': 'krasivqye',
 }
 
 

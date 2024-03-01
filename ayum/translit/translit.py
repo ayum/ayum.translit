@@ -12,7 +12,6 @@ def to_latin(string, locale=locale):
                                            "$wb = [^[:Letter:]] ;"
                                            # е
                                            "$wb { е > ye ;"
-                                           "[ыq] { е } $wb > e ;"
                                            "[ьъыq] { е > ye ;"
                                            "е > e ;"
                                            # э
@@ -21,7 +20,8 @@ def to_latin(string, locale=locale):
                                            "э > qe ;"
                                            # ы
                                            "[жшцйjwcy] { ы > i ;"
-                                           "ы > q ;"
+                                           "ы } [йеёюяy] > q ;"
+                                           "ы > qi ;"
                                            # ё
                                            "$wb { ё > yo ;"
                                            "[жшцйjwcy] { ё > o ;"

@@ -13,7 +13,7 @@ def to_latin(string, locale=locale):
                                            # е
                                            "$wb { е > ye ;"
                                            "[ыq] { е } $wb > e ;"
-                                           "[уеёыаоэяиюьъiuoeaq] { е > ye ;"
+                                           "[ьъыq] { е > ye ;"
                                            "е > e ;"
                                            # э
                                            "$wb { э > e ;"
@@ -71,6 +71,7 @@ def to_latin(string, locale=locale):
                                            # Проход с начала
                                            ":: Any-Null ;"
                                            "[nlmr] { ь } y[aueioq] > ;"
+                                           "[цчшщжcwjh] { ь > ;"
                                            "ь > h ;"
                                            "[nlmr] { ъ } y[aueioq] > y;"
                                            "ъ > ;"

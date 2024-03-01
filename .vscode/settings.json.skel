@@ -1,0 +1,6 @@
+{
+    "editor.wordWrap": "on",
+    "terminal.integrated.env.linux": {
+        "PATH": "${workspaceFolder}/node_modules/.bin:${env:PATH}"
+    }
+}

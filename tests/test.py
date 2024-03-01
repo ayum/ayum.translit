@@ -3,8 +3,8 @@ from ayum import translit
 
 cases_cyr_lat = {
     'авдотья': 'avdothya',
-    'отъявленный': 'otyavlennqy',
-    'бактерицидный': 'baktericidnqy',
+    'отъявленный': 'otyavlennqiy',
+    'бактерицидный': 'baktericidnqiy',
     'вьюга': 'vhyuga',
     'юг': 'yug',
     'эра': 'era',
@@ -34,15 +34,14 @@ cases_cyr_lat = {
     'вожжи': 'vojji',
     'жужжать': 'jujjath',
     'объём': 'obyom',
-    'выемка': 'vqyemka',
+    'выемка': 'vqiemka',
     'каньон': 'kanyon',
     'гальюн': 'galyun',
     'веет': 'veet',
     'веешь': 'veew',
     'епархия': 'yeparxiya',
     'ералаш': 'yeralaw',
-    'выем': 'vqyem',
-    'красивые': 'krasivqye',
+    'красивые': 'krasivqie',
 }
 
 

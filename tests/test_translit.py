@@ -3,6 +3,8 @@ from ayum import translit
 
 cases_cyr_lat = {
     'авдотья': 'avdotya',
+    'авдотьи': 'avdothi',
+    'авдотьe': 'avdothe',
     'отъявленный': 'otqavlennyy',
     'бактерицидные': 'baktericidnye',
     'вьюга': 'vyuga',
@@ -68,6 +70,18 @@ class TestToLatin(unittest.TestCase):
     def test_all(self):
         for cyr, lat in cases_cyr_lat.items():
             self.assertEqual(translit.to_latin(cyr), lat)
+
+
+cases_cyr_slug = {
+    'лучше — не хуже': 'luchwe-ne-xuje',
+    'ḟ...aÅ—ß': 'f-aa-ss',
+}
+
+class TestSlugify(unittest.TestCase):
+
+    def test_all(self):
+        for cyr, slug in cases_cyr_slug.items():
+            self.assertEqual(translit.slugify(cyr), slug)
 
 
 if __name__ == '__main__':

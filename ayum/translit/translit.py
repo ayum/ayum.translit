@@ -1,4 +1,5 @@
 from icu import UnicodeString, Normalizer2, Transliterator
+import re
 
 def to_latin(string):
     ustring = UnicodeString(string)
@@ -129,12 +130,27 @@ def to_latin(string):
                                            "[ъЪ] } $wb > ;"
                                            "ъ > q ;"
                                            "Ъ > Q ;"
-                                           "ь > | h ;"
-                                           "Ь > | H ;"
-                                           "[hH] { h } [iI] > y ;"
-                                           "[hH] { H } [iI] > Y ;"
-                                           "[hH] h > | h ;"
-                                           "[hH] H > | H ;"
+                                           "[hH] { ь } [iI] > y ;"
+                                           "[hH] { Ь } [iI] > Y ;"
+                                           "[hH] { ь > ;"
+                                           "[hH] { Ь >;"
+                                           "ь > h ;"
+                                           "Ь > H ;"
                                            )
     ustring = trans.transliterate(ustring)
     return ustring
+
+def slugify(string):
+    latin = string if string.isascii() else to_latin(string)
+    slug = latin.lower()
+    slug = slug.replace("ß", "ss")
+    slug = slug.replace("œ", "oe")
+    slug = slug.replace("æ", "ae")
+    slug = slug.replace("—", "-")
+    slug = slug.replace("–", "-")
+    nfkd = Normalizer2.getNFKDInstance()
+    slug = nfkd.normalize(slug)
+    slug = ''.join(['' if ord(c) > 127 else c if ord('0') <= ord(c) <= ord('9') or ord('A') <= ord(c) <= ord('Z') or ord('a') <= ord(c) <= ord('z') else '-' for c in slug]).strip('-')
+    print(slug)
+    slug = re.sub(r'[-]+', '-', slug)
+    return slug

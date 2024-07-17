@@ -1,1 +1,1 @@
-from .translit import to_latin
+from .translit import to_latin, slugify

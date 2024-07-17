@@ -40,3 +40,7 @@ packages = ["ayum"]
 testpaths = [
     "tests",
 ]
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
